@@ -1,0 +1,25 @@
+{
+  "name": "fastify-ts-setup",
+  "version": "1.0.0",
+  "description": "The setup for fastify typescript with jest and nodemon",
+  "main": "build/index.js",
+  "repository": "https://github.com/zhinea/fastify-ts-setup",
+  "author": "Zidna Fadla",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "npx ts-node index.ts",
+    "dev": "npx nodemon",
+    "build": "npx tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@fastify/formbody": "^7.4.0",
+    "fastify": "^4.10.2"
+  }
+}
