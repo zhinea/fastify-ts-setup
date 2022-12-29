@@ -2,9 +2,9 @@ import app from "../src/app";
 
 
 test('Test / (GET)', async () => {
-    let fastify = await app();
+    const fastify = await app();
 
-    let res = await fastify.inject({
+    const res = await fastify.inject({
         method: 'GET',
         url: '/'
     })
